@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Yoogle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+
+    .container {
+      text-align: center;
+      width: 100%;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 500px;
+      max-width: 90%;
+      margin-bottom: 30px;
+    }
+
+    .search-box {
+      display: flex;
+      border: 1px solid #dcdcdc;
+      border-radius: 30px;
+      padding: 10px 15px;
+      align-items: center;
+    }
+
+    .search-box input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .search-box button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .search-box svg {
+      width: 22px;
+      height: 22px;
+      fill: #1a73e8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- LOGO -->
+    <img src="https://image2url.com/images/1765995183482-0e9f7ed3-02ae-486d-8226-40da0013ccbd.png"
+         alt="Yoogle"
+         class="logo">
+
+    <!-- PESQUISA -->
+    <form action="https://www.google.com/search" method="get">
+      <div class="search-box">
+        <input type="text" name="q" placeholder="Pesquisar no Yoogle" required>
+        <button type="submit" aria-label="Pesquisar">
+          <!-- ÍCONE DE LUPA -->
+          <svg viewBox="0 0 24 24">
+            <path d="M15.5 14h-.79l-.28-.27
+              A6.471 6.471 0 0 0 16 9.5
+              6.5 6.5 0 1 0 9.5 16
+              a6.471 6.471 0 0 0 4.23-1.57
+              l.27.28v.79l5 4.99
+              L20.49 19l-4.99-5zM9.5 14
+              C7.01 14 5 11.99 5 9.5
+              S7.01 5 9.5 5
+              14 7.01 14 9.5
+              11.99 14 9.5 14z"/>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
